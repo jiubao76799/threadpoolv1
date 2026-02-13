@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ThreadPool.h
+vector
+-
+queue
+-
+memory
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+future
+-
+functional
+-
+stdexcept
+-
+atomic
+-
+
+/home/jiubao/code2026/threadpool/threadpoolv1/test/test1.cpp
+iostream
+-
+thread
+-
+ThreadPool.h
+/home/jiubao/code2026/threadpool/threadpoolv1/test/ThreadPool.h
+
