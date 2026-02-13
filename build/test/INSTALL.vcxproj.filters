@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\code2026\threadpool\threadpoolv1\build\CMakeFiles\b32422acdf9ddea351120170fc4f88ce\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{21B6BE19-3AF5-3C03-AE1B-38971DC1149F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

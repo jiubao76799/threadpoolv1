@@ -1,0 +1,37 @@
+﻿Change Dir: 'D:/code2026/threadpool/threadpoolv1/build'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Release /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.14+a129329f1
+鐢熸垚鍚姩鏃堕棿涓?2026/2/13 11:30:09銆?
+
+鑺傜偣 1 涓婄殑椤圭洰鈥淒:\code2026\threadpool\threadpoolv1\build\ALL_BUILD.vcxproj鈥?榛樿鐩爣)銆?
+椤圭洰鈥淒:\code2026\threadpool\threadpoolv1\build\ALL_BUILD.vcxproj鈥?1)姝ｅ湪鑺傜偣 1 涓婄敓鎴愨€淒:\code2026\threadpool\threadpoolv1\build\ZERO_CHECK.vcxproj鈥?2) (榛樿鐩爣)銆?
+PrepareForBuild:
+  宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+InitializeBuildStatus:
+  姝ｅ湪鍒涘缓鈥渪64\Release\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+  姝ｅ湪瀵光€渪64\Release\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+CustomBuild:
+  鎵€鏈夎緭鍑哄潎涓烘渶鏂般€?
+FinalizeBuildStatus:
+  姝ｅ湪鍒犻櫎鏂囦欢鈥渪64\Release\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild鈥濄€?
+  姝ｅ湪瀵光€渪64\Release\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+宸插畬鎴愮敓鎴愰」鐩€淒:\code2026\threadpool\threadpoolv1\build\ZERO_CHECK.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+PrepareForBuild:
+  宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+InitializeBuildStatus:
+  姝ｅ湪鍒涘缓鈥渪64\Release\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+  姝ｅ湪瀵光€渪64\Release\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+CustomBuild:
+  鎵€鏈夎緭鍑哄潎涓烘渶鏂般€?
+FinalizeBuildStatus:
+  姝ｅ湪鍒犻櫎鏂囦欢鈥渪64\Release\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild鈥濄€?
+  姝ｅ湪瀵光€渪64\Release\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+宸插畬鎴愮敓鎴愰」鐩€淒:\code2026\threadpool\threadpoolv1\build\ALL_BUILD.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+
+宸叉垚鍔熺敓鎴愩€?
+    0 涓鍛?
+    0 涓敊璇?
+
+宸茬敤鏃堕棿 00:00:00.26
+
