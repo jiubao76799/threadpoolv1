@@ -16,5 +16,6 @@
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/list_install_components.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/rebuild_cache.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/edit_cache.dir
+/home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/test_day2_basic.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/install/strip.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/test_day1_basic.dir

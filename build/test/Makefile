@@ -157,6 +157,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/test_day2_basic.dir/rule:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_day2_basic.dir/rule
+.PHONY : test/CMakeFiles/test_day2_basic.dir/rule
+
+# Convenience name for target.
+test_day2_basic: test/CMakeFiles/test_day2_basic.dir/rule
+
+.PHONY : test_day2_basic
+
+# fast build rule for target.
+test_day2_basic/fast:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day2_basic.dir/build.make test/CMakeFiles/test_day2_basic.dir/build
+.PHONY : test_day2_basic/fast
+
+# Convenience name for target.
 test/CMakeFiles/test_day1_basic.dir/rule:
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_day1_basic.dir/rule
 .PHONY : test/CMakeFiles/test_day1_basic.dir/rule
@@ -198,6 +213,33 @@ test1.cpp.s:
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day1_basic.dir/build.make test/CMakeFiles/test_day1_basic.dir/test1.cpp.s
 .PHONY : test1.cpp.s
 
+test2.o: test2.cpp.o
+
+.PHONY : test2.o
+
+# target to build an object file
+test2.cpp.o:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day2_basic.dir/build.make test/CMakeFiles/test_day2_basic.dir/test2.cpp.o
+.PHONY : test2.cpp.o
+
+test2.i: test2.cpp.i
+
+.PHONY : test2.i
+
+# target to preprocess a source file
+test2.cpp.i:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day2_basic.dir/build.make test/CMakeFiles/test_day2_basic.dir/test2.cpp.i
+.PHONY : test2.cpp.i
+
+test2.s: test2.cpp.s
+
+.PHONY : test2.s
+
+# target to generate assembly for a file
+test2.cpp.s:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day2_basic.dir/build.make test/CMakeFiles/test_day2_basic.dir/test2.cpp.s
+.PHONY : test2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,11 +251,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_day2_basic"
 	@echo "... install/strip"
 	@echo "... test_day1_basic"
 	@echo "... test1.o"
 	@echo "... test1.i"
 	@echo "... test1.s"
+	@echo "... test2.o"
+	@echo "... test2.i"
+	@echo "... test2.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -O3 -DNDEBUG -O2   CMakeFiles/test_day2_basic.dir/test2.cpp.o  -o test_day2_basic  ../src/libthreadpool.a -lpthread 

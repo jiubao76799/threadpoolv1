@@ -11,7 +11,7 @@ endfunction()
 
 #添加测试
 add_pool_test(test_day1_basic test1.cpp)
-
+add_pool_test(test_day2_basic test2.cpp)
 
 
     
