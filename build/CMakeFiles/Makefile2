@@ -92,6 +92,7 @@ src/clean: src/CMakeFiles/threadpool.dir/clean
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
+test/all: test/CMakeFiles/test_day3_basic.dir/all
 test/all: test/CMakeFiles/test_day2_basic.dir/all
 test/all: test/CMakeFiles/test_day1_basic.dir/all
 
@@ -103,6 +104,7 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
+test/clean: test/CMakeFiles/test_day3_basic.dir/clean
 test/clean: test/CMakeFiles/test_day2_basic.dir/clean
 test/clean: test/CMakeFiles/test_day1_basic.dir/clean
 
@@ -115,7 +117,7 @@ test/clean: test/CMakeFiles/test_day1_basic.dir/clean
 src/CMakeFiles/threadpool.dir/all:
 	$(MAKE) -f src/CMakeFiles/threadpool.dir/build.make src/CMakeFiles/threadpool.dir/depend
 	$(MAKE) -f src/CMakeFiles/threadpool.dir/build.make src/CMakeFiles/threadpool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=5,6 "Built target threadpool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=7,8 "Built target threadpool"
 .PHONY : src/CMakeFiles/threadpool.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,6 +136,33 @@ threadpool: src/CMakeFiles/threadpool.dir/rule
 src/CMakeFiles/threadpool.dir/clean:
 	$(MAKE) -f src/CMakeFiles/threadpool.dir/build.make src/CMakeFiles/threadpool.dir/clean
 .PHONY : src/CMakeFiles/threadpool.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_day3_basic.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_day3_basic.dir/all: src/CMakeFiles/threadpool.dir/all
+	$(MAKE) -f test/CMakeFiles/test_day3_basic.dir/build.make test/CMakeFiles/test_day3_basic.dir/depend
+	$(MAKE) -f test/CMakeFiles/test_day3_basic.dir/build.make test/CMakeFiles/test_day3_basic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=5,6 "Built target test_day3_basic"
+.PHONY : test/CMakeFiles/test_day3_basic.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_day3_basic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_day3_basic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_day3_basic.dir/rule
+
+# Convenience name for target.
+test_day3_basic: test/CMakeFiles/test_day3_basic.dir/rule
+
+.PHONY : test_day3_basic
+
+# clean rule for target.
+test/CMakeFiles/test_day3_basic.dir/clean:
+	$(MAKE) -f test/CMakeFiles/test_day3_basic.dir/build.make test/CMakeFiles/test_day3_basic.dir/clean
+.PHONY : test/CMakeFiles/test_day3_basic.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/test_day2_basic.dir
