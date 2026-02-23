@@ -68,6 +68,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,17 +111,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -155,6 +155,21 @@ preinstall/fast:
 depend:
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+test/CMakeFiles/test_day4_basic.dir/rule:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_day4_basic.dir/rule
+.PHONY : test/CMakeFiles/test_day4_basic.dir/rule
+
+# Convenience name for target.
+test_day4_basic: test/CMakeFiles/test_day4_basic.dir/rule
+
+.PHONY : test_day4_basic
+
+# fast build rule for target.
+test_day4_basic/fast:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day4_basic.dir/build.make test/CMakeFiles/test_day4_basic.dir/build
+.PHONY : test_day4_basic/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_day3_basic.dir/rule:
@@ -282,6 +297,33 @@ test3.cpp.s:
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day3_basic.dir/build.make test/CMakeFiles/test_day3_basic.dir/test3.cpp.s
 .PHONY : test3.cpp.s
 
+test4.o: test4.cpp.o
+
+.PHONY : test4.o
+
+# target to build an object file
+test4.cpp.o:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day4_basic.dir/build.make test/CMakeFiles/test_day4_basic.dir/test4.cpp.o
+.PHONY : test4.cpp.o
+
+test4.i: test4.cpp.i
+
+.PHONY : test4.i
+
+# target to preprocess a source file
+test4.cpp.i:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day4_basic.dir/build.make test/CMakeFiles/test_day4_basic.dir/test4.cpp.i
+.PHONY : test4.cpp.i
+
+test4.s: test4.cpp.s
+
+.PHONY : test4.s
+
+# target to generate assembly for a file
+test4.cpp.s:
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build && $(MAKE) -f test/CMakeFiles/test_day4_basic.dir/build.make test/CMakeFiles/test_day4_basic.dir/test4.cpp.s
+.PHONY : test4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -289,10 +331,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
+	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... test_day4_basic"
 	@echo "... test_day3_basic"
 	@echo "... test_day2_basic"
 	@echo "... install/strip"
@@ -306,6 +349,9 @@ help:
 	@echo "... test3.o"
 	@echo "... test3.i"
 	@echo "... test3.s"
+	@echo "... test4.o"
+	@echo "... test4.i"
+	@echo "... test4.s"
 .PHONY : help
 
 

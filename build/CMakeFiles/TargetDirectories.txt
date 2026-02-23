@@ -12,10 +12,11 @@
 /home/jiubao/code2026/threadpool/threadpoolv1/build/src/CMakeFiles/edit_cache.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/src/CMakeFiles/threadpool.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/install/local.dir
+/home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/edit_cache.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/install.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/list_install_components.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/rebuild_cache.dir
-/home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/edit_cache.dir
+/home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/test_day4_basic.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/test_day3_basic.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/test_day2_basic.dir
 /home/jiubao/code2026/threadpool/threadpoolv1/build/test/CMakeFiles/install/strip.dir

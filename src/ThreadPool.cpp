@@ -36,6 +36,37 @@ ThreadPool::~ThreadPool() {
     std::cout<<"线程池已关闭"<<std::endl;
 }
 
+//获取工作线程数量
+size_t ThreadPool::getThreadCount() const{
+    return workers.size();
+}
+
+//获取当前队列中等待执行的任务数量
+size_t ThreadPool::getTaskCount(){
+    std::unique_lock<std::mutex> lock(queue_mutex);
+    return tasks.size();
+}
+
+//获取已完成的任务数量
+size_t ThreadPool::getCompletedTaskCount() const{
+    return completedTasks;
+}
+
+
+//获取当前活跃的线程数量
+size_t ThreadPool::getActiveThreadCount() const{
+    return activeThreads;
+}
+
+// 获取当前等待的线程数量
+size_t ThreadPool::getWaitingThreadCount() const {
+    size_t totalThreads = getThreadCount();
+    size_t activeCount = getActiveThreadCount();
+    // 等待线程数 = 总线程数 - 活跃线程数
+    return totalThreads - activeCount;
+}
+
+
 //工作线程函数 - 线程的工作逻辑
 void ThreadPool::workerThread(){
     while(true){
@@ -64,6 +95,7 @@ void ThreadPool::workerThread(){
 
         //执行任务 (在锁外执行，避免长时间持有锁)
         if(task){
+            ++activeThreads;
             try {
                 task();
             }catch (const std::exception& e){
@@ -71,6 +103,8 @@ void ThreadPool::workerThread(){
             }catch(...){
                 std::cout<<"任务执行未知异常"<<std::endl;
             }
+            ++completedTasks;
+            --activeThreads;
         }
     }
 }

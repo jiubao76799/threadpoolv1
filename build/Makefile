@@ -170,6 +170,19 @@ threadpool/fast:
 .PHONY : threadpool/fast
 
 #=============================================================================
+# Target rules for targets named test_day4_basic
+
+# Build rule for target.
+test_day4_basic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_day4_basic
+.PHONY : test_day4_basic
+
+# fast build rule for target.
+test_day4_basic/fast:
+	$(MAKE) -f test/CMakeFiles/test_day4_basic.dir/build.make test/CMakeFiles/test_day4_basic.dir/build
+.PHONY : test_day4_basic/fast
+
+#=============================================================================
 # Target rules for targets named test_day3_basic
 
 # Build rule for target.
@@ -221,6 +234,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... threadpool"
+	@echo "... test_day4_basic"
 	@echo "... test_day3_basic"
 	@echo "... test_day2_basic"
 	@echo "... test_day1_basic"

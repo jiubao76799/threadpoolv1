@@ -29,6 +29,22 @@ public:
     auto enqueue(F&& f, Args&&... args)
         -> std::future<typename std::result_of<F(Args...)>::type>;
         
+    //获取工作线程数量
+    size_t getThreadCount() const ;
+
+    //获取当前活跃的线程数量
+    size_t getActiveThreadCount() const;
+
+    //获取当前队列中等待线程数
+    size_t getWaitingThreadCount() const;
+
+    //获取当前队列中等待执行的任务数量
+    size_t getTaskCount() ;
+
+    //获取已完成的任务数量
+    size_t getCompletedTaskCount() const;
+
+
 
     //状态查询方法
     bool isStopped() const { return stop; }
@@ -50,6 +66,10 @@ private:
     //控制线程池停止
     std::atomic<bool> stop{false};
 
+    //计数器
+    std::atomic<size_t> activeThreads{0};
+    std::atomic<size_t> completedTasks{0};
+    
 };
 
 //模板函数实现
