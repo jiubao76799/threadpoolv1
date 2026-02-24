@@ -54,6 +54,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/threadpool.dir/DependInfo.cmake"
   "test/CMakeFiles/test_day4_basic.dir/DependInfo.cmake"
   "test/CMakeFiles/test_day3_basic.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_day5_basic.dir/DependInfo.cmake"
   "test/CMakeFiles/test_day2_basic.dir/DependInfo.cmake"
   "test/CMakeFiles/test_day1_basic.dir/DependInfo.cmake"
   )

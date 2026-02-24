@@ -11,6 +11,7 @@
 #include <functional>
 #include <stdexcept>
 #include <atomic>
+#include <unordered_set>
 
 class ThreadPool {
 public: 
@@ -44,6 +45,24 @@ public:
     //获取已完成的任务数量
     size_t getCompletedTaskCount() const;
 
+    // 获取失败的任务数量
+    size_t getFailedTaskCount() const;
+    
+    //动态调整线程池大小
+    void resize(size_t threads);
+
+    //暂停线程池
+    void pause();
+
+    //恢复线程池
+    void resume();
+
+    //等待所有任务完成
+    void waitForTasks();
+
+    //清空任务队列
+    void clearTasks();
+
 
 
     //状态查询方法
@@ -51,7 +70,10 @@ public:
     
 private:
     //工作线程函数
-    void workerThread();
+    void workerThread(size_t id);
+
+    //存储需要停止的线程ID(索引)
+    std::unordered_set<size_t> threadsToStop;
     
     //工作线程容器
     std::vector<std::thread> workers;
@@ -62,13 +84,16 @@ private:
     //同步机制
     std::mutex queue_mutex;
     std::condition_variable condition;
+    std::condition_variable waitCondition;
 
-    //控制线程池停止
+    //控制线程池状态
     std::atomic<bool> stop{false};
+    std::atomic<bool> paused{false};
 
     //计数器
     std::atomic<size_t> activeThreads{0};
     std::atomic<size_t> completedTasks{0};
+    std::atomic<size_t> failedTasks{0};
     
 };
 
