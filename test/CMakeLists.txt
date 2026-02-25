@@ -15,4 +15,4 @@ add_pool_test(test_day2_basic test2.cpp)
 add_pool_test(test_day3_basic test3.cpp)
 add_pool_test(test_day4_basic test4.cpp)
 add_pool_test(test_day5_basic test5.cpp)
-    
+add_pool_test(test_day6_basic test6.cpp)

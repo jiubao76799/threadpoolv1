@@ -1,2 +1,2 @@
-/usr/bin/ar qc libthreadpool.a  CMakeFiles/threadpool.dir/ThreadPool.cpp.o
+/usr/bin/ar qc libthreadpool.a  CMakeFiles/threadpool.dir/Logger.cpp.o CMakeFiles/threadpool.dir/TaskInfo.cpp.o CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o CMakeFiles/threadpool.dir/ThreadPool.cpp.o
 /usr/bin/ranlib libthreadpool.a

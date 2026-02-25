@@ -57,9 +57,48 @@ include src/CMakeFiles/threadpool.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/threadpool.dir/flags.make
 
+src/CMakeFiles/threadpool.dir/Logger.cpp.o: src/CMakeFiles/threadpool.dir/flags.make
+src/CMakeFiles/threadpool.dir/Logger.cpp.o: ../src/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/threadpool.dir/Logger.cpp.o"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadpool.dir/Logger.cpp.o -c /home/jiubao/code2026/threadpool/threadpoolv1/src/Logger.cpp
+
+src/CMakeFiles/threadpool.dir/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadpool.dir/Logger.cpp.i"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiubao/code2026/threadpool/threadpoolv1/src/Logger.cpp > CMakeFiles/threadpool.dir/Logger.cpp.i
+
+src/CMakeFiles/threadpool.dir/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadpool.dir/Logger.cpp.s"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiubao/code2026/threadpool/threadpoolv1/src/Logger.cpp -o CMakeFiles/threadpool.dir/Logger.cpp.s
+
+src/CMakeFiles/threadpool.dir/TaskInfo.cpp.o: src/CMakeFiles/threadpool.dir/flags.make
+src/CMakeFiles/threadpool.dir/TaskInfo.cpp.o: ../src/TaskInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/threadpool.dir/TaskInfo.cpp.o"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadpool.dir/TaskInfo.cpp.o -c /home/jiubao/code2026/threadpool/threadpoolv1/src/TaskInfo.cpp
+
+src/CMakeFiles/threadpool.dir/TaskInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadpool.dir/TaskInfo.cpp.i"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiubao/code2026/threadpool/threadpoolv1/src/TaskInfo.cpp > CMakeFiles/threadpool.dir/TaskInfo.cpp.i
+
+src/CMakeFiles/threadpool.dir/TaskInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadpool.dir/TaskInfo.cpp.s"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiubao/code2026/threadpool/threadpoolv1/src/TaskInfo.cpp -o CMakeFiles/threadpool.dir/TaskInfo.cpp.s
+
+src/CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o: src/CMakeFiles/threadpool.dir/flags.make
+src/CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o: ../src/ThreadPoolMetrics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o -c /home/jiubao/code2026/threadpool/threadpoolv1/src/ThreadPoolMetrics.cpp
+
+src/CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.i"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiubao/code2026/threadpool/threadpoolv1/src/ThreadPoolMetrics.cpp > CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.i
+
+src/CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.s"
+	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiubao/code2026/threadpool/threadpoolv1/src/ThreadPoolMetrics.cpp -o CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.s
+
 src/CMakeFiles/threadpool.dir/ThreadPool.cpp.o: src/CMakeFiles/threadpool.dir/flags.make
 src/CMakeFiles/threadpool.dir/ThreadPool.cpp.o: ../src/ThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/threadpool.dir/ThreadPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/threadpool.dir/ThreadPool.cpp.o"
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/threadpool.dir/ThreadPool.cpp.o -c /home/jiubao/code2026/threadpool/threadpoolv1/src/ThreadPool.cpp
 
 src/CMakeFiles/threadpool.dir/ThreadPool.cpp.i: cmake_force
@@ -72,15 +111,21 @@ src/CMakeFiles/threadpool.dir/ThreadPool.cpp.s: cmake_force
 
 # Object files for target threadpool
 threadpool_OBJECTS = \
+"CMakeFiles/threadpool.dir/Logger.cpp.o" \
+"CMakeFiles/threadpool.dir/TaskInfo.cpp.o" \
+"CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o" \
 "CMakeFiles/threadpool.dir/ThreadPool.cpp.o"
 
 # External object files for target threadpool
 threadpool_EXTERNAL_OBJECTS =
 
+src/libthreadpool.a: src/CMakeFiles/threadpool.dir/Logger.cpp.o
+src/libthreadpool.a: src/CMakeFiles/threadpool.dir/TaskInfo.cpp.o
+src/libthreadpool.a: src/CMakeFiles/threadpool.dir/ThreadPoolMetrics.cpp.o
 src/libthreadpool.a: src/CMakeFiles/threadpool.dir/ThreadPool.cpp.o
 src/libthreadpool.a: src/CMakeFiles/threadpool.dir/build.make
 src/libthreadpool.a: src/CMakeFiles/threadpool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libthreadpool.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jiubao/code2026/threadpool/threadpoolv1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libthreadpool.a"
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && $(CMAKE_COMMAND) -P CMakeFiles/threadpool.dir/cmake_clean_target.cmake
 	cd /home/jiubao/code2026/threadpool/threadpoolv1/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threadpool.dir/link.txt --verbose=$(VERBOSE)
 
