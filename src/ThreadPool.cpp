@@ -400,43 +400,29 @@ void ThreadPool::executeTask(size_t id, std::shared_ptr<TaskInfo> taskPtr) {
 #if 1
 // 使用超时机制执行任务
 void ThreadPool::executeTaskWithTimeout(std::shared_ptr<TaskInfo> taskPtr, bool& isTimeout) {
-    // 创建一个信号量，用于指示任务是否完成
-    std::atomic<bool> taskCompleted{ false };
-    std::exception_ptr taskException = nullptr;
-
-    // 在单独的线程中执行任务
-    std::thread taskThread([&]() {
+    // 使用std::async来执行任务，这样可以更容易地处理超时
+    auto future = std::async(std::launch::async, [taskPtr]() {
         try {
             taskPtr->task();
-            taskCompleted = true;
         }
         catch (...) {
-            taskException = std::current_exception();
-            taskCompleted = true;
+            // 异常会通过future传播
+            throw;
         }
         });
 
-    // 分离线程，允许它在后台运行
-    taskThread.detach();
-
-    // 等待任务完成或超时
-    auto startTime = std::chrono::steady_clock::now();
-    auto waitUntil = startTime + taskPtr->timeout;
-    while (std::chrono::steady_clock::now() < waitUntil && !taskCompleted) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(10));
-    }
-
-    // 如果任务未完成，说明超时
-    if (!taskCompleted) {
+    // 等待future完成，带超时
+    auto status = future.wait_for(taskPtr->timeout);
+    
+    if (status == std::future_status::timeout) {
         isTimeout = true;
         throw std::runtime_error("Task timed out after " +
             std::to_string(taskPtr->timeout.count()) + "ms");
     }
-
-    // 如果任务抛出了异常，重新抛出
-    if (taskException) {
-        std::rethrow_exception(taskException);
-    }
+    
+    // 如果任务完成（无论成功还是异常），获取结果
+    // 这会将任何异常传播到当前线程
+    future.get();
 }
 #endif
 
