@@ -38,4 +38,5 @@ private:
     std::string logFile;
     std::mutex mutex;
 };
+
 #endif // LOGGER_H

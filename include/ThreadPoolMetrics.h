@@ -10,6 +10,8 @@ struct ThreadPoolMetrics {
     std::atomic<size_t> totalTasks{ 0 };           // 总任务数
     std::atomic<size_t> completedTasks{ 0 };       // 已完成任务数
     std::atomic<size_t> failedTasks{ 0 };          // 失败任务数
+    std::atomic<size_t> canceledTasks{ 0 };        // 取消的任务数
+    std::atomic<size_t> timedOutTasks{ 0 };        // 超时的任务数
     std::atomic<size_t> activeThreads{ 0 };        // 活跃线程数
     std::atomic<size_t> peakThreads{ 0 };          // 峰值线程数
     std::atomic<size_t> peakQueueSize{ 0 };        // 峰值队列大小
